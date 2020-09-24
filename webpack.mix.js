@@ -11,7 +11,22 @@ const mix = require('laravel-mix');
  |
  */
 
+
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+
+mix;
+
+mix.styles([
+    'public/dist/css/style.css',
+    'public/dist/css/components.css',
+    'public/dist/css/jquery.selectareas.css'
+], 'public/css/app.css');
+
+mix.scripts([
+    'public/dist/js/stisla.js',
+    'public/dist/js/scripts.js',
+    'public/dist/js/custom.js',
+], 'public/js/app-plugin.js');

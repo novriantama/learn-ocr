@@ -13,9 +13,11 @@
         "fruitcake/laravel-cors": "^2.0",
         "google/apiclient": "^2.7",
         "google/cloud-vision": "^1.2",
-        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/guzzle": "^6.3 ",
+        "intervention/image": "^2.5",
         "laravel/framework": "^8.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "wapnen/google-cloud-vision-php": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

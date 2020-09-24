@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\OCR;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('annotate');
 });
+
+Route::get('/annotate', [OCR::class, 'displayForm']);
+Route::post('/annotate', [OCR::class, 'annotateImage']);
+Route::post('/crop', [OCR::class, 'cropImage']);
